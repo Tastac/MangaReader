@@ -28,3 +28,4 @@ Thumbs.db
 # optional: local uploads (if you store user files on disk)
 data/
 uploads/
+/src/generated/prisma

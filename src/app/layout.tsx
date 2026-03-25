@@ -1,24 +1,39 @@
-export default function NotFound() {
-  return (
-    <html>
-        <head>
+import "./styles.css";
+import "../lib/auth";
+import "./login";
+import "react";
 
-        </head>
-        <body>
-            <main style={{ padding: 24 }}>
-                <div id="masthead">
-                    <div id="library">
-                        <a>Library</a>
-                    </div>
-                    <div id="settings">
-                        <a>Settings</a>
-                    </div>
-                    <div id="logout">
-                        <a>Logout</a>
-                    </div>
-                </div>
-            </main>
-        </body>
+function loginChecker() {
+  console.log("Login button clicked");
+  // Implement your login logic here, e.g., validate credentials, call an API, etc.
+}
+
+function Login() {
+  return (
+    <div className="login-container">
+      <form>
+        <div className="form-group">
+          <label htmlFor="username">Username</label>
+          <input type="text" id="username" placeholder="username" name="username" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input type="password" id="password" placeholder="password" name="password" />
+        </div>
+        <button>Login</button>
+      </form>
+    </div>
+  );
+}
+
+export default function MangaSiteMockup() {
+  return (
+  <html lang="en">
+    <body>
+      <div className="app">
+        <Login />
+      </div>
+    </body>
   </html>
   );
 }
