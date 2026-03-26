@@ -1,1 +1,0 @@
-export { authConfig as proxy } from "@/lib/auth"

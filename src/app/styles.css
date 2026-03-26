@@ -32,6 +32,9 @@ html {
 
 /* Login page styles */
 .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 400px;
   margin: 50px auto;
   padding: 20px;
@@ -43,17 +46,32 @@ html {
   -o-border-radius: 5px;
 }
 
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form-group {
   margin: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#username-group {
+  margin-bottom: 5px;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .form-group input {
-  width: 93%;
+  width: 85%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -63,14 +81,26 @@ html {
   -o-border-radius: 5px;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 button {
   background-color: #333;
   color: white;
   padding: 10px 20px;
-  
+  margin: 10px auto;
+  text-align: center;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {

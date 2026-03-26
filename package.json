@@ -1,4 +1,7 @@
 {
+  "name": "mangareader",
+  "version": "1.0.0",
+  "main": "/src/app/app.tsx",
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.1",
     "@prisma/client": "^7.5.0",
